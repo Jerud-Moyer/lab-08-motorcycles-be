@@ -29,8 +29,8 @@ async function run() {
                     type VARCHAR(50) NOT NULL,
                     is_fast BOOLEAN NOT NULL,
                     ccs INTEGER NOT NULL,
-                    engine_type_id INTEGER NOT NULL REFERENCES engine_types(id),
-                    owner_id INTEGER NOT NULL REFERENCES users(id)
+                    owner_id INTEGER NOT NULL REFERENCES users(id),
+                    engine_type_id INTEGER NOT NULL REFERENCES engine_types(id)
             );
                
         `);
